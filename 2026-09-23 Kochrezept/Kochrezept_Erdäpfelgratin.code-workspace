@@ -2,6 +2,9 @@
     "folders": [
         {
             "path": "../../LOD-WMC"
+        },
+        {
+            "path": ".."
         }
     ]
 }
