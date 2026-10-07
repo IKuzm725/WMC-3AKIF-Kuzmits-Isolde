@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular für eine Sportveranstaltung</title>
+</head>
+<body>
+    <form action="mailto:lorenzd@spengergasse.at?subject=Formular%20WMC" method="post" enctype="text/plain">
+        <p>Bitte füllen Sie das Formular aus, wenn Sie an der Sportveranstaltung teilnehmen möchten:</p>
+        <br>
+        <input type="text" name="vorname" placeholder="Vorname" required>
+        <input type="text" name="nachname" placeholder="Nachname" required>
+        <input type="email" name="email" placeholder="E-Mail-Adresse" required>
+        <br><br>
+        <input type="checkbox" name="mindestalter" value="17+">
+        <label for="mindestalter">Ich bin mindestens 17 Jahre alt.</label>
+        <input type="checkbox" name="mindestalter" value="16-">
+        <label for="mindestalter">Ich bin noch nicht 17 Jahre alt.</label>
+        <br><br>
+        <input type="radio" name="geschlecht" value="maennlich">
+        <label for="geschlecht">Männlich</label>
+        <input type="radio" name="geschlecht" value="weiblich">
+        <label for="geschlecht">Weiblich</label>
+        <br><br>
+        <select name="teilnahmedauer">
+            <option selected disabled>Bitte wählen Sie die gewünschte Teilnahmedauer aus.</option>
+            <option>Schnuppertag</option>
+            <option>1 Woche</option>
+            <option>1 Monat</option>
+            <option>1 Semester</option>
+            <option>1 Jahr</option>
+        </select>
+        <br><br>
+        <select name="sportart" multiple required>
+            <option selected disabled>Bitte wählen Sie die gewünschte(n) Sportart(en) aus.</option>
+            <optgroup label="Ballsport">
+                <option>Fußball</option>
+                <option>Basketball</option>
+                <option>Volleyball</option>
+                <option>Handball</option>
+            </optgroup>
+            <optgroup label="Kampfsport">
+                <option>Judo</option>
+                <option>Karate</option>
+                <option>Taekwondo</option>
+                <option>Boxen</option>
+            </optgroup>
+            <optgroup label="Einzelsport">
+                <option>Tennis</option>
+                <option>Badminton</option>
+                <option>Leichtathletik</option>
+                <option>Schwimmen</option>
+                <option>Turnen</option>
+                <option>Bogenschießen</option>
+            </optgroup>
+            <optgroup label="Wintersport">
+                <option>Skifahren</option>
+                <option>Snowboarden</option>
+                <option>Eislaufen</option>
+                <option>Rodeln</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <textarea name="kommentar" rows="7" cols="50" placeholder="Möchten Sie uns noch etwas mitteilen?"></textarea>
+        <br><br>
+        <input type="date" name="aktuelles_datum">
+        <input type="text" name="unterschrift" placeholder="Unterschrift" required>
+        <br><br>
+        <input type="hidden" name="formular_sportveranstaltung" value="form1.html">
+        <input type="submit" value="Absenden">
+        <input type="reset" value="Zurücksetzen">
+    </form>
+</body>
+</html>
