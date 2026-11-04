@@ -1,0 +1,104 @@
+
+h1 {
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul li::marker {
+    color:rgb(38, 180, 227);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    content: space-around;
+    justify-content: center;
+}
+
+a {
+    color: rgb(38, 180, 227);
+    padding: 15px 15px 15px 0;
+    margin: 20px;
+}
+
+a:hover  {
+    color: blue;
+    font-size: 20px;
+}
+
+a:active {
+    color: darkblue;
+}
+
+body {
+    background-color:aquamarine;
+}
+
+.violet {
+    color: violet;
+}
+
+.violet:hover {
+    color: black;
+    background-color: violet;
+}
+
+.blink:hover {
+    
+    @keyframes blinkColor {
+        0% { color: red; background-color: yellow; }
+        25% { color: green; background-color: blue; }
+        50% { color: blue; background-color: green; }
+        75% { color: yellow; background-color: lightgreen}
+        100% { color: red; background-color: yellow; }
+    }
+    animation: blinkColor 2s infinite;
+}
+
+summary {
+    color: black;
+    background-color: rgb(38, 180, 227);
+    margin: 10px;
+}
+
+strong {
+    font-size: 20px;
+}
+
+details {
+    background-color: rgb(133, 207, 231);
+    padding: 0 0 0 15px;
+    border-radius: 10px 0 0 0;
+}
+
+em {
+    font-size: 20px;
+}
+
+img {
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+figcaption {
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 10px 10px 10px 0;
+}
+
+
+footer {
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
