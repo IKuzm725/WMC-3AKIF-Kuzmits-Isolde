@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        width: 33.33%;
+    }
+}
+
+nav {
+    background-color: #16416B;
+    color: white;
+    text-decoration: none;
+}
+
+nav::after {
+    content: "\A";
+    white-space: pre;
+    background-color: white;
+    height: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav ul li {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #16416B;
+    font-size: 1.25rem;
+}
+
+nav ul li:hover {
+    background-color: steelblue;
+    color: white;
+    text-decoration: underline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    margin-top: 1rem;
+}
+
+header {
+    background-color: steelblue;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem 0 1rem;
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 232, 232);
+    align-items: flex-start;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 2rem;
+}
+
+form {
+    align-items: flex-start;
+}
+
+input {
+    display: block;
+    width: 50rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    display: block;
+    width: 50rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: darkgrey;
+    color: white;
+    border: none;
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
